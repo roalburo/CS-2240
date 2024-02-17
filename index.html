@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>GoodOmensWebsite</title>
+    <link rel="icon" type="image/x-icon" href="images/good_omens-modified.png">
+    <style>
+        body,h1,h2,h3,h4 {
+            font-family: "Raleway", sans-serif
+        }
+        body, html {
+            height: 100%;
+            line-height: 1.8;
+            color: #777;
+        }
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+            position:relative;
+            opacity: 0.80;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .bgimg-1 {
+            background-image: url("images/1119666.jpg");
+            min-height: 100%;
+        }
+        .bgimg-2 {
+            background-image: url("images/good-omens-s2-header.jpg");
+            min-height: 400px;
+        }
+        .bgimg-3 {
+            background-image: url("images/1119664.jpg");
+            min-height: 400px;
+        }
+        .bgimg-4 {
+            background-image: url("images/4028.webp");
+            min-height: 400px;
+        }
+        .bgimg-5 {
+            background-image: url("images/img-5.jpg");
+            min-height: 400px;
+        }
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+            font-family: "Shantell Sans", cursive;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+                "BNCE" 0,
+                "INFM" 0,
+                "SPAC" 0;
+        }
+        .caption span.border {
+            background-color: #000000;
+            color: #fff;
+            padding: 18px;
+            font-size: 50px;
+            letter-spacing: 20px;
+        }
+        h2, h3, h4 {
+            letter-spacing: 2px;
+            color: #002345;
+        }
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+                background-attachment: scroll;
+            }
+        }
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+        /* .w3-bar .w3-button {
+            padding: 16px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar" id="navbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#authors" class="w3-bar-item w3-button w3-hide-small w3-right">THE AUTHORS</a>
+            <a href="#cast" class="w3-bar-item w3-button w3-hide-small w3-right">THE CAST</a>
+            <a href="#tvseries" class="w3-bar-item w3-button w3-hide-small w3-right">THE TV SERIES</a>
+            <a href="#novel" class="w3-bar-item w3-button w3-hide-small w3-right">THE NOVEL</a> 
+        </div>
+        <div id="nav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#novel" class="w3-bar-item w3-button" onclick="toggleFunction()">THE NOVEL</a>
+            <a href="#tvseries" class="w3-bar-item w3-button" onclick="toggleFunction()">THE TV SERIES</a>
+            <a href="#cast" class="w3-bar-item w3-button" onclick="toggleFunction()">THE CAST</a>
+            <a href="#authors" class="w3-bar-item w3-button" onclick="toggleFunction()">THE AUTHORS</a>
+        </div>
+    </div>
+    <div id="home" class="bgimg-1">
+        <div class="caption"><span class="border">GOOD OMENS</span></div>
+    </div>
+    <div style="color: #777;background-color:#FAF9F6;text-align:center;padding:50px 80px;">
+        <h2 id="novel" style="text-align: center;">About the Novel</h2>
+        <p><em><strong>Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch</strong></em> is a 1990 novel written as a collaboration between the English <a href="#authors">authors</a> Terry Pratchett and Neil Gaiman</p>
+        <p>The book is a comedy about the birth of the son of Satan and the coming of the End Times. There are attempts by the angel Aziraphale and the demon Crowley to sabotage the coming of the end times, having grown accustomed to their comfortable surroundings in England. One subplot features a mix-up at the small country hospital on the day of birth and the growth of the Antichrist, Adam, who grows up with the wrong family, in the wrong country village. Another subplot concerns the summoning of the Four Horsemen of the Apocalypse, each a big personality in their own right.</p>
+    </div>
+    <div class="bgimg-2"></div>
+    <div style="position:relative;">
+        <div style="color:#777;background-color:#FAF9F6;text-align:center;padding:50px 80px;">
+            <h2 id="tvseries" style="text-align: center;">About the TV Series</h2>
+            <p><em><strong>Good Omens</strong></em> is a British fantasy comedy television series created by Neil Gaiman based on his and Terry Pratchett's 1990 <a href="#novel">novel</a>.</p>
+            <p>Like the novel, Good Omens features various Christian themes and figures and follows various characters all trying to either encourage or prevent an imminent Armageddon, seen through the eyes of the angel Aziraphale and the demon Crowley.</p>
+        </div>
+    </div>
+    <div class="bgimg-3"></div>
+    <div id="cast" style="position:relative;">
+        <div style="color:#777;background-color:#FAF9F6;text-align:center;padding:50px 80px;">
+            <h2 id="cast" style="text-align: center;">About the Cast</h2>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <!-- put links for pics of cast-->
+                        <div class="img"><img src="images/Michael_Sheen.jpg" alt="Michael Sheen" draggable="false"></div>
+                        <h3>Michael Sheen</h3>
+                        <span>as Aziraphale</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/david-tennant.jpg" alt="David Tennant" draggable="false"></div>
+                        <h3>David Tennant</h3>
+                        <span>as Crowley</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/sam-taylor-buck.jpg" alt="Sam Taylor Buck" draggable="false"></div>
+                        <h3>Sam Taylor Buck</h3>
+                        <span>as Adam Young(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Jon_Hamm.jpg" alt="Jon Hamm" draggable="false"></div>
+                        <h3>Jon Hamm</h3>
+                        <span>as Gabriel</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Adria_Arjona.jpg" alt="Adria Arjona" draggable="false"></div>
+                        <h3>Adria Arjona</h3>
+                        <span>as Anathema Device(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Jack_Whitehall.jpg" alt="Jack Whitehall" draggable="false"></div>
+                        <h3>Jack Whitehall</h3>
+                        <span>as Newton Pulsifer(Season 1)/Thou-Shalt-Not-Commit-Adultery Pulsifer(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/3678.jpg" alt="Anna Maxwell Martin" draggable="false"></div>
+                        <h3>Anna Maxwell Martin</h3>
+                        <span>as Beelzebub(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/shelley-conn.jpg" alt="Shelley Conn" draggable="false"></div>
+                        <h3>Shelley Conn</h3>
+                        <span>as Beelzebub(Season 2)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Nina_Sosanya.jpg" alt="Nina Sosanya" draggable="false"></div>
+                        <h3>Nina Sosanya</h3>
+                        <span>as Sister Mary Loquacious(Season 1)/Nina(Season 2)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/maggie.jpg" alt="Maggie Service" draggable="false"></div>
+                        <h3>Maggie Service</h3>
+                        <span>as Sister Theresa Garrulous(Season 1)/Maggie(Season 2)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/frances-mcdormand.jpg" alt="Frances McDormand" draggable="false"></div>
+                        <h3>Frances McDormand</h3>
+                        <span>as the voice of God(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Mireille_Enos.jpg" alt="Mireille Enos" draggable="false"></div>
+                        <h3>Mireille Enos</h3>
+                        <span>as War(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/261662_v9_bb.jpg" alt="Yusuf Gatewood" draggable="false"></div>
+                        <h3>Yusuf Gatewood</h3>
+                        <span>as Famine(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/lourdes-faberes.jpg" alt="Lourdes Faberes" draggable="false"></div>
+                        <h3>Lourdes Faberes</h3>
+                        <span>as Pollution(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/brian-cox.jpg" alt="Brian Cox" draggable="false"></div>
+                        <h3>Brian Cox(voice)</h3>
+                        <span>as Death(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Jamie_Hill.jpg" alt="Jamie Hill" draggable="false"></div>
+                        <h3>Jamie Hill(body)</h3>
+                        <span>as Death(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/miranda-richardson.jpg" alt="Miranda Richardson" draggable="false"></div>
+                        <h3>Miranda Richardson</h3>
+                        <span>as Madame Tracy(Season 1)/Shax(Season 2)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/michael-mckean.jpg" alt="Michael McKean" draggable="false"></div>
+                        <h3>Michael McKean</h3>
+                        <span>as Witchfinder Sergeant Shadwell(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/ned-dennehy.jpg" alt="Ned Dennehy" draggable="false"></div>
+                        <h3>Ned Dennehy</h3>
+                        <span>as Hastur(Season 1)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/doon-mackichan.jpg" alt="Doon Mackichan" draggable="false"></div>
+                        <h3>Doon Mackichan</h3>
+                        <span>as Michael</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/gloria-obianyo.jpg" alt="Gloria Obianyo" draggable="false"></div>
+                        <h3>Gloria Obianyo</h3>
+                        <span>as Uriel</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Liz_Carr.jpg" alt="Liz Carr" draggable="false"></div>
+                        <h3>Liz Carr</h3>
+                        <span>as Saraqael(Season 2)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/quelin-sepulveda.jpg" alt="Quelin Sepulveda" draggable="false"></div>
+                        <h3>Quelin Sepulveda</h3>
+                        <span>as Muriel(Season 2)</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+            max-width: 1100px;
+            width: 100%;
+            position: relative;
+        }
+        .wrapper i {
+            top: 50%;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            font-size: 1.25rem;
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+            transform: translateY(-50%);
+            transition: transform 0.1s linear;
+        }
+        .wrapper i:active{
+            transform: translateY(-50%) scale(0.85);
+        }
+        .wrapper i:first-child{
+            left: -22px;
+        }
+        .wrapper i:last-child{
+            right: -22px;
+        }
+        .wrapper .carousel{
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: calc((100% / 3) - 12px);
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 16px;
+            border-radius: 8px;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel.no-transition {
+            scroll-behavior: auto;
+        }
+        .carousel.dragging {
+            scroll-snap-type: none;
+            scroll-behavior: auto;
+        }
+        .carousel.dragging .card {
+            cursor: grab;
+            user-select: none;
+        }
+        .carousel :where(.card, .img) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel .card {
+            scroll-snap-align: start;
+            height: 342px;
+            list-style: none;
+            background: #fff;
+            cursor: pointer;
+            padding-bottom: 15px;
+            flex-direction: column;
+            border-radius: 8px;
+        }
+        .carousel .card .img {
+            background: #3B444B;
+            height: 148px;
+            width: 148px;
+            border-radius: 50%;
+        }
+        .card .img img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+        .carousel .card h3 {
+            font-weight: 500;
+            font-size: 1.56rem;
+            margin: 30px 0 5px;
+        }
+        .carousel .card span {
+            color: #6A6D78;
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 900px) {
+            .wrapper .carousel {
+                grid-auto-columns: calc((100% / 2) - 9px);
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .wrapper .carousel {
+                grid-auto-columns: 100%;
+            }
+        }
+    </style>
+    <div class="bgimg-4"></div>
+    <div style="position:relative;">
+        <div style="color:#777;background-color:#00003f;text-align:center;padding:50px 80px;">
+            <h2 id="authors" style="text-align: center; color: #fff;">About the Authors</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="authorcard">
+                        <img src="images/terry-pratchett-2015.jpg" alt="Terry Pratchett" style="width:100%">
+                        <div class="container">
+                            <h3>Terry Pratchett</h3>
+                            <p class="description"><strong>Sir Terence David John Pratchett</strong> OBE (28 April 1948 – 12 March 2015) was an English author, humorist, and satirist, best known for his 41 comic fantasy novels set on the <em>Discworld</em>, and for the apocalyptic comedy novel <em>Good Omens</em> (1990) which he wrote with Neil Gaiman.</p>
+                            <p class="description">With more than 100 million books sold worldwide in 43 languages, Pratchett was the UK's best-selling author of the 1990s. He was appointed Officer of the Order of the British Empire (OBE) in 1998 and was knighted for services to literature in the 2009 New Year Honours. In 2001, he won the annual Carnegie Medal for <em>The Amazing Maurice and His Educated Rodents</em>, the first Discworld book marketed for children. He received the World Fantasy Award for Life Achievement in 2010.</p>
+                            <p class="description">In December 2007, Pratchett announced that he had been diagnosed with early-onset Alzheimer's disease. He later made a substantial public donation to the Alzheimer's Research Trust and became a patron for ARUK. Pratchett died in March 2015, aged 66.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="authorcard">
+                        <img src="images/neil-gaiman.jpg" alt="Neil Gaiman" style="width:100%">
+                        <div class="container">
+                            <h3>Neil Gaiman</h3>
+                            <p class="description"><strong>Neil Richard MacKinnon Gaiman</strong> (born Neil Richard Gaiman on 10 November 1960) is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and screenplays. His works include the comic book series <em>The Sandman</em> and the novels <em>Good Omens</em>, <em>Stardust</em>, <em>Anansi Boys</em>, <em>American Gods</em>, <em>Coraline</em>, and <em>The Graveyard Book</em>. In 2023, he starred as the voice of Gef the talking mongoose in the black comedy film <em>Nandor Fodor and the Talking Mongoose</em>.</p>
+                            <p class="description">Gaiman has won numerous awards, including the Hugo, Nebula, and Bram Stoker awards, as well as the Newbery and Carnegie medals. He is the first author to win both the Newbery and the Carnegie medals for the same work, <em>The Graveyard Book</em> (2008). In 2013, <em>The Ocean at the End of the Lane</em> was voted Book of the Year in the British National Book Awards. It was later adapted into a critically acclaimed stage play at the Royal National Theatre in London.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        .container {
+            padding: 0 16px;
+            background-color: #FAF9F6;
+        }
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .authorcard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+    <div class="bgimg-5"></div>
+    <div style="position:relative;">
+        <div style="color:#777;background-color:#FAF9F6;text-align:center;padding:50px 80px;text-align:justify;">
+            <h4 style="text-align: left;">Origins and Authorship</h4>
+            <p>Neil Gaiman and Terry Pratchett had known each other since 1985. Gaiman, inspired by his success in writing a biography of Douglas Adams (Don't Panic: Douglas Adams & The Hitchhiker's Guide to the Galaxy), and in observing Adams work at close quarters decided to try his hand at novel writing, and sent a piece of work to a number of friends, including Terry Pratchett for feedback. Pratchett responded positively eight months later. According to Gaiman, he originally began the book as a parody of Richmal Crompton's William books, named William the Antichrist, but it gradually outgrew the original idea. It was their own idea, not that of their publisher, to collaborate on a novel.</p>
+            <h4 style="text-align: left;">Television</h4>
+            <p>In April 2016, Gaiman announced that he was writing the scripts for a six-part television series as the result of a request from Pratchett, made shortly before his death. In January 2017, further details emerged. Amazon announced that Gaiman would adapt Good Omens into a "comedic apocalyptic" miniseries, set to be released on Prime Video in 2019. The adaptation is a six-part limited comedy series for Amazon and the BBC, and Gaiman served as showrunner. On 14 August 2017, Michael Sheen and David Tennant were announced as having been cast in the respective lead roles of Aziraphale and Crowley. The village of Hambleden in Buckinghamshire is the filming location for 'Tadfield' with Jasmine Cottage being located just north of the village at Colstrope Farm. The adaptation was produced by BBC Studios in collaboration with Narrativia and Gaiman's The Blank Corporation. Distribution was handled by BBC Worldwide. All six episodes of the serial were released on 31 May 2019 on Amazon Prime. In June 2021 Amazon renewed Good Omens for a second season, with Sheen and Tennant returning alongside most of the original cast, and a third and final season being announced in December of 2023.</p>
+        </div>
+    </div>
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+        </div>
+        <p>Submitted by Raphaela Alburo</a></p>
+    </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+        function toggleFunction() {
+            var x = document.getElementById("nav");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+    }
+    </script>
+</body>
+</html>
